@@ -38,7 +38,7 @@ function render() {
     '╠' + line + '╣',
     pad(` Last wave   : ${state.lastWave == null ? '-' : nf(state.lastWave)}`),
     pad(` Updated     : ${kst(Date.now()).replace('T', ' ').slice(0, 19)} (KST)`),
-    pad(` 24h total   : +${nf(totalGain)} wave`),
+    pad(` Total   : +${nf(totalGain)} wave`),
     pad(` Best hour   : ${best ? best.replace('T', ' ') + ':00  [' + nf(state.hours[best].count) + ']' : '-'}`),
     '╚' + line + '╝',
     '',
